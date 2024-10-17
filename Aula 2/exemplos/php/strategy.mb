@@ -1,0 +1,28 @@
+O padrão Strategy permite definir e trocar algoritmos ou comportamentos de forma flexível, sem alterar a estrutura principal do código. Cada comportamento é encapsulado em uma classe separada, facilitando a escolha e substituição conforme necessário.
+
+
+Como Funciona
+- Definição de Interface Comum:
+Cria-se uma interface que define o método a ser implementado por todas as estratégias, garantindo que possam ser usadas de forma intercambiável.
+
+- Implementação de Estratégias Específicas:
+Cada comportamento ou algoritmo é implementado em uma classe separada que segue a interface comum, encapsulando diferentes lógicas.
+
+- Escolha e Aplicação Dinâmica:
+A classe principal usa uma referência à interface e pode trocar a estratégia em tempo de execução, aplicando o comportamento desejado sem modificar o código base.
+
+--------------------------------------------
+Cálculo de Frete em E-commerce:
+Diferentes métodos de envio (correios, transportadoras, entrega expressa) podem ter cálculos de frete variados. O padrão Strategy permite escolher e aplicar o método de frete apropriado para cada cliente com base no endereço, velocidade de entrega desejada ou promoções.
+
+Filtros de Imagem em Processamento de Fotos:
+Em um software de edição de imagem, o usuário pode aplicar diferentes filtros (como preto e branco, sepia, ou ajuste de contraste). O padrão Strategy permite implementar cada filtro como uma estratégia separada, facilitando a adição de novos filtros sem alterar o código principal.
+
+Cálculo de Juros em Empréstimos Bancários:
+Para calcular o pagamento de empréstimos, podem existir diferentes formas de cálculo de juros (juros simples, compostos, ou taxas promocionais). O Strategy permite escolher e aplicar a fórmula de juros correta conforme o tipo de empréstimo e perfil do cliente.
+
+Formatação de Arquivos:
+Em um editor de texto ou software de exportação de dados, o usuário pode querer salvar o arquivo em formatos diferentes (PDF, DOCX, HTML). Com Strategy, é possível implementar cada formato como uma estratégia, facilitando a troca e expansão dos tipos de arquivo suportados.
+
+Autenticação em Aplicações Web:
+Em aplicações que oferecem diferentes formas de autenticação (senha, biometria, autenticação multifatorial), cada método pode ser uma estratégia independente. O Strategy permite que o sistema aplique a estratégia de autenticação adequada para o usuário com base em preferências ou necessidades de segurança.
