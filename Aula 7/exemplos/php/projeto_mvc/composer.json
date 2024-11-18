@@ -1,0 +1,10 @@
+{
+    "name": "padrao_projeto/projeto_mvc",
+    "description": "Projeto de exemplo para demonstração do padrão MVC",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
